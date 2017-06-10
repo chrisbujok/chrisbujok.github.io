@@ -3,10 +3,43 @@
 <head>
   <title>Chris Bujok</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
+  <style>
+    @keyframes enter {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .email {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 300;
+      font-size: 3rem;
+      color: #555;
+      animation: 0.5s enter ease-in-out;
+    }
+  </style>
 </head>
-<body style="margin: 0; padding: 0">
-  <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
-    <p style="font-family: 'Nunito', sans-serif; font-weight: 300; font-size: 3rem; color: #555;">hello@chrisbujok.com</p>
+<body>
+  <div class="container">
+    <p class="email">hello@chrisbujok.com</p>
   </div>
 </body>
 </html>
